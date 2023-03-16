@@ -1,9 +1,9 @@
 ### 如何使用
-本程序依赖于python3和PicGo，在安装必要的包后，直接用python解释执行即可。
+本程序依赖于python3和PicGo(版本为2.3.1，如果PicGo没有发生大的变动，则本程序能正常工作)，在安装必要的包后，直接用python解释执行即可。
 
 程序并不会直接修改你的源文件，而是在源文件所在目录下新生成一个源文件.output.md文件，具体替换内容可以看源文件所在目录下的日志文件.output.md.log
 
-对于windows用户，可以通过任务管理器得到PicGo进程的所有pid，在利用netstat命令检测这些pid占用的端口，处于LISTENING状态的端口就是要填写的端口
+对于windows用户，可以通过任务管理器得到PicGo进程的所有pid，再利用netstat命令检测这些pid占用的端口(netstat -ano | findstr `任务管理器里找到的PicGo的某个pid`)，处于LISTENING状态的端口就是要填写的端口(注意不是pid，而是端口号，在冒号后面的数字)，通常为36677
 
 即使文件名含英文，也不要使用""。
 
