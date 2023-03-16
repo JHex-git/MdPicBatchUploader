@@ -10,7 +10,6 @@ MAX_TRY_TIME = 10
 TRY_INTERVAL = 60 # 2MSL一般是240，只要MAX_TRY_TIME * TRY_INTERVAL >= 2MSL一般就可以重新传成功
 
 target = input('请输入要进行批量上传图片并替换链接的md文件的路径(含文件名)\n')
-typora_path = input('请输入typora的完整路径\n')
 port = input('请输入PicGo监听的端口(如果不清楚，请查看README.md)\n')
 
 regex = r'.*\!\[.+\]\((.*)\).*'
